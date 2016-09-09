@@ -1,0 +1,40 @@
+{
+    "KeystoneS3API.test_01": [
+        {
+           "runner": {
+                "type": "constant",
+                "times": 1000,
+                "concurrency": 10
+            },
+            
+            "context": {
+                "s3_context": {
+                    "host": "172.16.54.67"
+                },
+             
+                "users": {
+                    "tenants": 20,
+                    "users_per_tenant": 1,
+                    "user_choice_method": "round_robin"
+                }
+            },
+            
+            "sla": {
+                "max_avg_duration_per_atomic": {
+                    "upload_small_files": 65340,
+                    "list_files": 60,
+                    "list_files (2)": 60,
+                    "list_files (3)": 60,
+                    "download_small_files": 65340,
+                    "delete_bucket_files_sequentially": 65340,
+                    "create_bucket": 60,
+                    "delete_bucket": 60
+                },
+                
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        }
+    ]
+}

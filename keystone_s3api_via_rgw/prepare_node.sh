@@ -7,3 +7,7 @@ mkdir ~/.rally
 cd ~/.rally
 svn export https://github.com/ppetrov-mirantis/rally_tests/trunk/keystone_s3api_via_rgw/plugins_s3
 svn export https://github.com/ppetrov-mirantis/rally_tests/trunk/keystone_s3api_via_rgw/tests
+
+. openrc admin admin
+rally-manage db recreate
+rally deployment create --fromenv --name=existing

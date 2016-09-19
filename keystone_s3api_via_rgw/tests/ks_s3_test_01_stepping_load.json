@@ -1,0 +1,364 @@
+{
+    "KeystoneS3API.test_01": [
+        {
+           "runner": {
+                "type": "constant",
+                "times": 80,
+                "concurrency": 10
+            },
+            
+            "context": {
+                "s3_context": {
+                    "host": "172.16.46.56"
+                },
+             
+                "users": {
+                    "tenants": 20,
+                    "users_per_tenant": 1,
+                    "user_choice_method": "round_robin"
+                }
+            },
+            
+            "sla": {
+                "max_avg_duration_per_atomic": {
+                    "upload_small_files": 65340,
+                    "list_files": 60,
+                    "list_files (2)": 60,
+                    "list_files (3)": 60,
+                    "download_small_files": 65340,
+                    "delete_bucket_files_sequentially": 65340,
+                    "create_bucket": 60,
+                    "delete_bucket": 60
+                },
+                
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        },
+        {
+           "runner": {
+                "type": "constant",
+                "times": 160,
+                "concurrency": 20
+            },
+            
+            "context": {
+                "s3_context": {
+                    "host": "172.16.46.56"
+                },
+             
+                "users": {
+                    "tenants": 40,
+                    "users_per_tenant": 1,
+                    "user_choice_method": "round_robin"
+                }
+            },
+            
+            "sla": {
+                "max_avg_duration_per_atomic": {
+                    "upload_small_files": 65340,
+                    "list_files": 60,
+                    "list_files (2)": 60,
+                    "list_files (3)": 60,
+                    "download_small_files": 65340,
+                    "delete_bucket_files_sequentially": 65340,
+                    "create_bucket": 60,
+                    "delete_bucket": 60
+                },
+                
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        },
+        {
+           "runner": {
+                "type": "constant",
+                "times": 240,
+                "concurrency": 30
+            },
+            
+            "context": {
+                "s3_context": {
+                    "host": "172.16.46.56"
+                },
+             
+                "users": {
+                    "tenants": 60,
+                    "users_per_tenant": 1,
+                    "user_choice_method": "round_robin"
+                }
+            },
+            
+            "sla": {
+                "max_avg_duration_per_atomic": {
+                    "upload_small_files": 65340,
+                    "list_files": 60,
+                    "list_files (2)": 60,
+                    "list_files (3)": 60,
+                    "download_small_files": 65340,
+                    "delete_bucket_files_sequentially": 65340,
+                    "create_bucket": 60,
+                    "delete_bucket": 60
+                },
+                
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        },
+        {
+           "runner": {
+                "type": "constant",
+                "times": 320,
+                "concurrency": 40
+            },
+            
+            "context": {
+                "s3_context": {
+                    "host": "172.16.46.56"
+                },
+             
+                "users": {
+                    "tenants": 80,
+                    "users_per_tenant": 1,
+                    "user_choice_method": "round_robin"
+                }
+            },
+            
+            "sla": {
+                "max_avg_duration_per_atomic": {
+                    "upload_small_files": 65340,
+                    "list_files": 60,
+                    "list_files (2)": 60,
+                    "list_files (3)": 60,
+                    "download_small_files": 65340,
+                    "delete_bucket_files_sequentially": 65340,
+                    "create_bucket": 60,
+                    "delete_bucket": 60
+                },
+                
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        },
+        {
+           "runner": {
+                "type": "constant",
+                "times": 400,
+                "concurrency": 50
+            },
+            
+            "context": {
+                "s3_context": {
+                    "host": "172.16.46.56"
+                },
+             
+                "users": {
+                    "tenants": 100,
+                    "users_per_tenant": 1,
+                    "user_choice_method": "round_robin"
+                }
+            },
+            
+            "sla": {
+                "max_avg_duration_per_atomic": {
+                    "upload_small_files": 65340,
+                    "list_files": 60,
+                    "list_files (2)": 60,
+                    "list_files (3)": 60,
+                    "download_small_files": 65340,
+                    "delete_bucket_files_sequentially": 65340,
+                    "create_bucket": 60,
+                    "delete_bucket": 60
+                },
+                
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        },
+        {
+           "runner": {
+                "type": "constant",
+                "times": 480,
+                "concurrency": 60
+            },
+            
+            "context": {
+                "s3_context": {
+                    "host": "172.16.46.56"
+                },
+             
+                "users": {
+                    "tenants": 120,
+                    "users_per_tenant": 1,
+                    "user_choice_method": "round_robin"
+                }
+            },
+            
+            "sla": {
+                "max_avg_duration_per_atomic": {
+                    "upload_small_files": 65340,
+                    "list_files": 60,
+                    "list_files (2)": 60,
+                    "list_files (3)": 60,
+                    "download_small_files": 65340,
+                    "delete_bucket_files_sequentially": 65340,
+                    "create_bucket": 60,
+                    "delete_bucket": 60
+                },
+                
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        },
+        {
+           "runner": {
+                "type": "constant",
+                "times": 560,
+                "concurrency": 70
+            },
+            
+            "context": {
+                "s3_context": {
+                    "host": "172.16.46.56"
+                },
+             
+                "users": {
+                    "tenants": 140,
+                    "users_per_tenant": 1,
+                    "user_choice_method": "round_robin"
+                }
+            },
+            
+            "sla": {
+                "max_avg_duration_per_atomic": {
+                    "upload_small_files": 65340,
+                    "list_files": 60,
+                    "list_files (2)": 60,
+                    "list_files (3)": 60,
+                    "download_small_files": 65340,
+                    "delete_bucket_files_sequentially": 65340,
+                    "create_bucket": 60,
+                    "delete_bucket": 60
+                },
+                
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        },
+        {
+           "runner": {
+                "type": "constant",
+                "times": 640,
+                "concurrency": 80
+            },
+            
+            "context": {
+                "s3_context": {
+                    "host": "172.16.46.56"
+                },
+             
+                "users": {
+                    "tenants": 160,
+                    "users_per_tenant": 1,
+                    "user_choice_method": "round_robin"
+                }
+            },
+            
+            "sla": {
+                "max_avg_duration_per_atomic": {
+                    "upload_small_files": 65340,
+                    "list_files": 60,
+                    "list_files (2)": 60,
+                    "list_files (3)": 60,
+                    "download_small_files": 65340,
+                    "delete_bucket_files_sequentially": 65340,
+                    "create_bucket": 60,
+                    "delete_bucket": 60
+                },
+                
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        },
+        {
+           "runner": {
+                "type": "constant",
+                "times": 720,
+                "concurrency": 90
+            },
+            
+            "context": {
+                "s3_context": {
+                    "host": "172.16.46.56"
+                },
+             
+                "users": {
+                    "tenants": 180,
+                    "users_per_tenant": 1,
+                    "user_choice_method": "round_robin"
+                }
+            },
+            
+            "sla": {
+                "max_avg_duration_per_atomic": {
+                    "upload_small_files": 65340,
+                    "list_files": 60,
+                    "list_files (2)": 60,
+                    "list_files (3)": 60,
+                    "download_small_files": 65340,
+                    "delete_bucket_files_sequentially": 65340,
+                    "create_bucket": 60,
+                    "delete_bucket": 60
+                },
+                
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        },
+        {
+           "runner": {
+                "type": "constant",
+                "times": 800,
+                "concurrency": 100
+            },
+            
+            "context": {
+                "s3_context": {
+                    "host": "172.16.46.56"
+                },
+             
+                "users": {
+                    "tenants": 200,
+                    "users_per_tenant": 1,
+                    "user_choice_method": "round_robin"
+                }
+            },
+            
+            "sla": {
+                "max_avg_duration_per_atomic": {
+                    "upload_small_files": 65340,
+                    "list_files": 60,
+                    "list_files (2)": 60,
+                    "list_files (3)": 60,
+                    "download_small_files": 65340,
+                    "delete_bucket_files_sequentially": 65340,
+                    "create_bucket": 60,
+                    "delete_bucket": 60
+                },
+                
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        }
+    ]
+}

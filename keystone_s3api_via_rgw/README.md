@@ -5,7 +5,7 @@ which in its turn creates some load to the Keystone S3 API.
 
 ------------------
 1. Download script prepare_controllers.sh to a master-node and start it there. 
-It will turn on usage of Keystone S3 API authentication by RGW on all controllers.
+It will turn on usage of Keystone S3 API authentication by Rados GW on all controllers.
 
 2. Download script prepare_node.sh to a dedicated compute-node.
 It will install rally 0.6.0, download the rest of the test infrastructure and properly install it.
